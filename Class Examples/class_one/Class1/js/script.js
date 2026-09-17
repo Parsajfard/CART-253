@@ -26,15 +26,14 @@ function setup() {
  * The drawing is intentionally abstract! 
 */
 function draw() {
-    background (0,0,0);
-    //call the function to draw the sun and moon
+    //background is intentionally not cleared to create a trail effect for the moving objects. 
+    //call the function to draw the different elements of the solar system.
     draw_the_sun();
-    draw_the_moon();
+    draw_the_earth();
     draw_the_stars();
     draw_the_satellite();
     draw_the_shooting_star();
     draw_the_aliens();
-    draw_the_clock_arms();
 }
 
 //function to draw the sun
@@ -47,8 +46,8 @@ function draw_the_sun() {
     pop();
 }
 
-//function to draw the moon
-function draw_the_moon() {
+//function to draw the earth
+function draw_the_earth() {
     push();
     translate (width/2, height/2);
     rotate (frameCount * 0.01);
@@ -66,8 +65,8 @@ function draw_the_stars() {
         let x = random(-width/2, width/2);
         let y = random(-height/2, height/2);
         ellipse (x,y,5,5);
-        pop();
     }   
+    pop();
 }
 
 //function to draw a satellite
