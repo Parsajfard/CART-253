@@ -1,24 +1,45 @@
 /**
- * Title of Project
- * Author Name
+ * Introducing variables
+ * Parsa Fard
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Learning what a varible is and does
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Create a canvas 
 */
 function setup() {
+    createCanvas(640, 480);
 
 }
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
+ * Draws a circle where the mouse is clicked
+ */
 function draw() {
+    background(0);
 
+    // Draw the circle
+    push();
+    fill(255,255,0);
+    noStroke();
+    ellipse(mouseX, mouseY, mouseX, mouseY);
+    pop();
+
+    // Draw second circle 
+    push();
+    fill(mouseX,mouseY,0);
+    noStroke();
+    ellipse(mouseX, mouseY, 100, 100);
+    pop();
+
+    // Draw second circle 
+    push();
+    fill(mouseX,mouseY,0);
+    noStroke();
+    ellipse(mouseY, mouseX, 100, 100);
+    pop();
 }
