@@ -30,6 +30,12 @@ let sky = {
     }
 };
 
+// The Position of the Annoying Bird
+let bird = {
+    x: 0,
+    y: 200
+};
+
 /**
  * Create the canvas
  */
@@ -49,6 +55,7 @@ function draw() {
     sky.fill.b -= 1;
 
 
+
     // Mr. Furious turns red 
     mrFurious.fill.g -= 1;
     mrFurious.fill.b -= 1;
@@ -62,5 +69,12 @@ function draw() {
     noStroke();
     fill(mrFurious.fill.r, mrFurious.fill.g, mrFurious.fill.b);
     ellipse(mrFurious.x, mrFurious.y, mrFurious.size);
+    pop();
+
+    // Draw Annoying bird
+    push();
+    noStroke();
+    fill(255, 0 ,0 );
+    ellipse(bird.x, bird.y, 40);
     pop();
 }
