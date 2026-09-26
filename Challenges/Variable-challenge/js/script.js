@@ -33,7 +33,24 @@ let sky = {
 // The Position of the Annoying Bird
 let bird = {
     x: 0,
-    y: 200
+    y: 200,
+    size: 50,
+    velocity: {
+      x: 0,
+      y: 0
+    },
+    minVelocity: {
+      x: -3,
+      y: -2
+    },
+    maxVelocity: {
+      x: 3,
+      y: 2
+    },
+    acceleration: {
+      x: 0.1,
+      y: -0.02
+    }
 };
 
 /**
@@ -48,6 +65,16 @@ function setup() {
  */
 function draw() {
     background(sky.fill.r, sky.fill.g, sky.fill.b);
+
+    // move the bird
+    bird.velocity.x += bird.acceleration.x;
+    bird.velocity.y += bird.acceleration.y;
+
+    bird.velocity.x = constrain(bird.velocity.x, bird.minVelocity.x, bird.maxVelocity.x);
+    bird.velocity.y = constrain(bird.velocity.y, bird.minVelocity.y, bird.maxVelocity.y);
+
+    bird.x += bird.velocity.x;
+    bird.y += bird.velocity.y;
 
     // Colour of sky from blue to black 
     sky.fill.r -= 1;
