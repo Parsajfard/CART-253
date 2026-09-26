@@ -81,15 +81,14 @@ function draw() {
     sky.fill.g -= 1;
     sky.fill.b -= 1;
 
-
-
     // Mr. Furious turns red 
     mrFurious.fill.g -= 1;
     mrFurious.fill.b -= 1;
     mrFurious.fill.g = constrain(mrFurious.fill.g, 75, 225)
     mrFurious.fill.b = constrain(mrFurious.fill.b, 75, 225)
 
-    //Sky changes from black to blue 
+    // Mr. Furious starts shaking from anger
+    mrFurious.x = random(190, 210);
 
     // Draw Mr. Furious as a coloured circle
     push();
