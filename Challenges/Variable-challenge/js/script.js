@@ -18,6 +18,19 @@ let mrFurious = {
     r: 255,
     g: 225,
     b: 225
+  },
+  //rage
+  rage: {
+    x: 5,
+    y: -5
+  },
+  minRage: {
+    x: -200,
+    y:-200
+  },
+  maxRage:{
+    x: 200,
+    y: 200
   }
 };
 
@@ -89,6 +102,11 @@ function draw() {
 
     // Mr. Furious starts shaking from anger
     mrFurious.x = random(190, 210);
+    mrFurious.x += mrFurious.rage.x;
+    mrFurious.y += mrFurious.rage.y;
+
+    mrFurious.x = constrain(mrFurious.x, mrFurious.minRage.x, mrFurious.maxRage.x);
+    mrFurious.y = constrain(mrFurious.y, mrFurious.minRage.y, mrFurious.maxRage.y);
 
     // Draw Mr. Furious as a coloured circle
     push();
