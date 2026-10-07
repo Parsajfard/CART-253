@@ -22,6 +22,11 @@ function drawDog() {
     ellipse(360, 270, 20, 20);
     ellipse(270, 270, 20, 20);
     pop();
+    //dog nose
+    push();
+    fill(0, 0, 0);
+    ellipse(320, 350, 30, 30);
+    pop();
 }
 /**
  * The setup creates the canvas. 
