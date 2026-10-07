@@ -9,5 +9,5 @@ Here is a link ot the project I lead at Concordia University's Innovation Lab" A
 
 Below is a link to my journal for the class, where I will be reflecting on my journey in this class. 
 
-[journal link](https://parsajfard.github.io/CART-253/journal)
+[journal link](https://parsajfard.github.io/CART-253/JOURNAL.md)
 
