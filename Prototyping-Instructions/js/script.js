@@ -27,6 +27,11 @@ function drawDog() {
     fill(0, 0, 0);
     ellipse(320, 350, 30, 30);
     pop();
+    //dog mouth
+    push();
+    fill(255, 0, 0);
+    arc(320, 400, 100, 100, 0, PI);
+    pop();
 }
 /**
  * The setup creates the canvas. 
