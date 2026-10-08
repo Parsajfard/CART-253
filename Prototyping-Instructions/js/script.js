@@ -44,12 +44,12 @@ function drawHotDog() {
     //hot dog bun 
     push();
     fill(255, 200, 100);
-    rect(300, 400, 200, 50, 20);
+    rect(50, 400, 200, 50, 20);
     pop();
     //hot dog sausage
     push();
     fill(255, 0, 0);
-    rect(300, 400, 200, 30, 20);
+    rect(50, 400, 200, 30, 20);
     pop();
 }
 /**
