@@ -1,12 +1,12 @@
-# Events Challenge 
+# TITLE OF PROJECT
 
-Parsa Fard, Beth Templeton
+AUTHOR NAME
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
 ## Description
 
-events challenge, pippin's losing game
+This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
 
 ## Attribution
 
