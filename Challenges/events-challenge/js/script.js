@@ -18,8 +18,24 @@ let gameOver = false;
  */
 function setup() {
   createCanvas(400, 400);
+
+  //Listen for change of connection and call the appropriate function 
+  //if we're online we win
+window.addEventListener ("offline", lose);
+  //if we're offline we lose 
+window.addEventListener ("online", test);
+
+document.addEventListener ("visibilitychange" , () => {
+    if (document.hidden) {
+        lose();
+    }
+});
+
 }
 
+function test() {
+    console.log("online");
+}
 /**
  * Update the score and display the UI
  */
@@ -32,8 +48,6 @@ function draw() {
     score += 0.05;
   }
   displayUI();
-
-  lose();
 }
 
 /**
@@ -63,19 +77,27 @@ function displayScore() {
   pop();
 }
 
+//make the user lose if a key is pressed 
 function lose(){
-    if (keyIsPressed) {
         gameOver = true;
-    }
 }
 
-//function mouseMoved() {
-   // gameOver = true;
+function keyPressed () {
+    lose();
+}
 
+//make the user lose if the mouse is moved
+function mouseMoved() {
+   lose();
+}
 
-//function mousePressed() {
-  //  gameOver = true;
+//make the user lose if the mouse is pressed
+function mousePressed() {
+    lose();
+}
 
+//make the user lose if the mouse wheel is moved
+function mouseWheel() {
+    lose();
+}
 
-//function mouseWheel() {
-  //  gameOver = true; 
