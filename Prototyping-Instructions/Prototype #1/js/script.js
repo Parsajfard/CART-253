@@ -108,7 +108,23 @@ function draw() {
     dandelionBeaksandSeeds();
     dandelionBulb();
 
+    //mirror Dandelion beaks and Seeds on Y axis
+    push();
+    translate(width,0);
+    scale(-1,1);
+    dandelionBeaksandSeeds();
+    pop();
 
+     //mirror Dandelion beaks and Seeds on Y axis
+    push();
+    translate(730,250);
+    rotate(-100,50);
+    scale(-0.8,0.8);
+    dandelionBeaksandSeeds();
+    pop();
+
+
+    dandelionBulb();
     
 
 
