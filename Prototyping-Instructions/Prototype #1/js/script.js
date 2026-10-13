@@ -111,7 +111,7 @@ function setup() {
 
 
 /**
- * draw function draws the dog and hot dog on the canvas. */
+ * draw function draws the components of the dandelion. */
 function draw() {
     background(20, 25, 25);
 
@@ -148,6 +148,4 @@ function draw() {
     //draw dandelion bulb
     dandelionBulb();
     
-
-
 }
