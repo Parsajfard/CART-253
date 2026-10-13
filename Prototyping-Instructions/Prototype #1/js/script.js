@@ -24,8 +24,8 @@ function dandelionBulb() {
     pop();
 }
 
-//define the function to draw the dandelion bulb
-function dandelionBeaksandSeeds() {
+//define the function to draw the dandelion beak and seeds
+function dandelionBeakandSeeds() {
 //Seed #1
     push();
     stroke(200,200,200);
@@ -91,6 +91,17 @@ function dandelionBeaksandSeeds() {
     pop();
 }
 
+function fallenSeed() {
+    push();
+    stroke(200,200,200);
+    strokeWeight(0.5);
+    line(450,600,550,565);
+    ellipse(550,565,10,10);
+    ellipse(450,600,2,2);
+    pop();
+
+}
+
 /**
  * The setup creates the canvas. 
 */
@@ -104,32 +115,35 @@ function setup() {
 function draw() {
     background(20, 25, 25);
 
+    //draw the dandelion stem and the first layer of seeds on the left side
     dandelionStem();
-    dandelionBeaksandSeeds();
-    dandelionBulb();
+    dandelionBeakandSeeds();
 
-    //mirror Dandelion beaks and Seeds on Y axis
+    //mirror Dandelion Seeds on Y axis
     push();
     translate(width,0);
     scale(-1,1);
-    dandelionBeaksandSeeds();
+    dandelionBeakandSeeds();
     pop();
 
-    //Draw another layer of seeds on the right side, closer to the Bulb, slightly rotate clockwise
+    //Draw another layer of seeds on the right side, closer to the Bulb, slightly rotated clockwise
     push();
     translate(730,250);
     rotate(-100);
     scale(-0.8,0.8);
-    dandelionBeaksandSeeds();
+    dandelionBeakandSeeds();
     pop();
 
-    //Draw another layer of seeds closer to the Bulb, closer to the Bulb, slightly rotated clockwise
+    //Draw another layer of seeds on the left side, closer to the Bulb, slightly rotated clockwise
     push();
     translate(150,10);
     rotate(-50);
     scale(0.8)
-    dandelionBeaksandSeeds();
+    dandelionBeakandSeeds();
     pop();
+
+    //draw a fallen seed
+    fallenSeed();
 
     //draw dandelion bulb
     dandelionBulb();
