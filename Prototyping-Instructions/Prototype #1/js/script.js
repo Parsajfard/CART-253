@@ -34,6 +34,14 @@ function dandelionBeaksandSeeds() {
     ellipse(250,250,10,10);
     pop();
 
+//Seed #1
+    push();
+    stroke(200,200,200);
+    strokeWeight(0.5);
+    line(350,350,350,215);
+    ellipse(350,215,10,10);
+    pop();
+
 //Seed #2
     push();
     stroke(200,200,200);
@@ -54,10 +62,33 @@ function dandelionBeaksandSeeds() {
     push();
     stroke(200,200,200);
     strokeWeight(0.5);
-    line(350,350,220,290);
-    ellipse(220,290,10,10);
+    line(350,350,210,340);
+    ellipse(210,340,10,10);
     pop();
 
+//Seed #4
+    push();
+    stroke(200,200,200);
+    strokeWeight(0.5);
+    line(350,350,220,400);
+    ellipse(220,400,10,10);
+    pop();
+
+//Seed #5
+    push();
+    stroke(200,200,200);
+    strokeWeight(0.5);
+    line(350,350,250,450);
+    ellipse(250,450,10,10);
+    pop();
+
+//Seed #6
+    push();
+    stroke(200,200,200);
+    strokeWeight(0.5);
+    line(350,350,300,480);
+    ellipse(300,480,10,10);
+    pop();
 }
 
 /**
