@@ -62,9 +62,9 @@ function abstractCircles() {
 //define the function for a center line behind the circle
 function centerLine() {
     push();
-    Stroke(255,255,255);
-    strokeWeight(2);
-    line(350,700,350,500);
+    stroke(255,255,255);
+    strokeWeight(8);
+    line(350,700,350,0);
     pop();
 }
 
