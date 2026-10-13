@@ -115,15 +115,23 @@ function draw() {
     dandelionBeaksandSeeds();
     pop();
 
-     //mirror Dandelion beaks and Seeds on Y axis
+    //Draw another layer of seeds on the right side, closer to the Bulb, slightly rotate clockwise
     push();
     translate(730,250);
-    rotate(-100,50);
+    rotate(-100);
     scale(-0.8,0.8);
     dandelionBeaksandSeeds();
     pop();
 
+    //Draw another layer of seeds closer to the Bulb, closer to the Bulb, slightly rotated clockwise
+    push();
+    translate(150,10);
+    rotate(-50);
+    scale(0.8)
+    dandelionBeaksandSeeds();
+    pop();
 
+    //draw dandelion bulb
     dandelionBulb();
     
 
