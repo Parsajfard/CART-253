@@ -23,6 +23,43 @@ function dandelionBulb() {
     fill(200,200,200);
     pop();
 }
+
+//define the function to draw the dandelion bulb
+function dandelionBeaksandSeeds() {
+//Seed #1
+    push();
+    stroke(200,200,200);
+    strokeWeight(0.5);
+    line(350,350,250,250);
+    ellipse(250,250,10,10);
+    pop();
+
+//Seed #2
+    push();
+    stroke(200,200,200);
+    strokeWeight(0.5);
+    line(350,350,300,220);
+    ellipse(300,220,10,10);
+    pop();
+
+//Seed #3
+    push();
+    stroke(200,200,200);
+    strokeWeight(0.5);
+    line(350,350,220,290);
+    ellipse(220,290,10,10);
+    pop();
+
+//Seed #4
+    push();
+    stroke(200,200,200);
+    strokeWeight(0.5);
+    line(350,350,220,290);
+    ellipse(220,290,10,10);
+    pop();
+
+}
+
 /**
  * The setup creates the canvas. 
 */
@@ -37,8 +74,8 @@ function draw() {
     background(20, 25, 25);
 
     dandelionStem();
+    dandelionBeaksandSeeds();
     dandelionBulb();
-    
 
 
     
