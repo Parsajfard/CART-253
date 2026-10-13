@@ -1,57 +1,74 @@
 /**
- * Dog eating a hot dog 
+ * Abstract
  * Parsa Fard
  * 
- * this is a simple drawing of a dog eating a hot dog. 
+ * this is a simple abstract drawing
  */
 
 "use strict";
 
-function drawDog() {
-    //dog ears
+//define the function for a series of circles that gradually change in colour
+function abstractCircles() {
+
+//circle #1
     push();
-    fill(200, 150, 70);
-    triangle(200, 200, 300, 300, 250, 340);
-    triangle(500, 200, 400, 300, 450, 340);
+    noFill();
+    stroke(200,190,250);
+    strokeWeight(20);
+    ellipse(350, 500, 400, 300);
     pop();
-    //dog face
-    ellipse(350, 350, 200, 200);
-    //dog outer eyes
+
+//circle #2
     push();
-    fill(255, 255, 255);
-    ellipse(360, 270, 50, 50);
-    ellipse(270, 270, 50, 50);
+    noFill();
+    stroke(200,190,225);
+    strokeWeight(20);
+    ellipse(350, 450, 400, 300);
     pop();
-    //dog irises
+
+//circle #3
     push();
-    fill(0, 0, 0);
-    ellipse(360, 270, 20, 20);
-    ellipse(270, 270, 20, 20);
+    noFill();
+    stroke(200,190,200);
+    strokeWeight(20);
+    ellipse(350, 400, 400, 300);
     pop();
-    //dog nose
+
+//circle #4
     push();
-    fill(200, 150, 70);
-    ellipse(320, 350, 30, 30);
+    noFill();
+    stroke(200,190,175);
+    strokeWeight(20);
+    ellipse(350, 350, 400, 300);
     pop();
-    //dog mouth
+
+//circle #5
     push();
-    fill(255, 0, 0);
-    arc(320, 400, 100, 100, 0, PI);
+    noFill();
+    stroke(200,190,150);
+    strokeWeight(20);
+    ellipse(350, 300, 400, 300);
+    pop();
+
+//circle #6
+    push();
+    noFill();
+    stroke(200,190,125);
+    strokeWeight(20);
+    ellipse(350, 250, 400, 300)
     pop();
 }
 
-function drawHotDog() {
-    //hot dog bun 
+//define the function for a center line behind the circle
+function centerLine() {
     push();
-    fill(255, 200, 100);
-    rect(50, 400, 200, 50, 20);
-    pop();
-    //hot dog sausage
-    push();
-    fill(255, 0, 0);
-    rect(50, 400, 200, 30, 20);
+    Stroke(255,255,255);
+    strokeWeight(2);
+    line(350,700,350,500);
     pop();
 }
+
+
 /**
  * The setup creates the canvas. 
 */
@@ -63,15 +80,24 @@ function setup() {
 /**
  * draw function draws the dog and hot dog on the canvas. */
 function draw() {
-    background(255, 255, 0);
+    background(225, 225, 230);
 
-    drawDog();
-    drawHotDog();
+    //draw a center line that is behind the circles
+    centerLine();
 
-    
+    abstractCircles();
 
+    //mirror abstract circles over x-axis
+    push();
+    translate(0,500);
+    scale(1,-1)
+    abstractCircles();
+    pop();
 
-    
-
-
+    //mirror abstract circles over x-axis and move them down
+    push();
+    translate(0,1000);
+    scale(1,-1)
+    abstractCircles();
+    pop();
 }
