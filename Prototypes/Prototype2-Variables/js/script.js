@@ -49,14 +49,15 @@ function draw() {
     sky.green = (mouseX-500)
     sky.red = (mouseX-500)
     
+    
     //draw building
     building();
 
     //draw windows
     push();
 
-    drawingContext.shadowBlur = 33;
-    drawingContext.shadowColor = (mouseX,mouseX,mouseX);
+    drawingContext.shadowBlur = mouseX-500;                 // The radius/size of the glow
+    drawingContext.shadowColor = color(250,250,250); 
 
     fill(windows.red,windows.green,windows.blue);
     //first row
@@ -86,4 +87,6 @@ function draw() {
 
     windows.red = mouseX;
     windows.green =mouseX;
+
+    pop();
 }
