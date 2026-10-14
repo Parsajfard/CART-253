@@ -54,8 +54,36 @@ function draw() {
 
     //draw windows
     push();
+
+    drawingContext.shadowBlur = 33;
+    drawingContext.shadowColor = (mouseX,mouseX,mouseX);
+
     fill(windows.red,windows.green,windows.blue);
+    //first row
     rect(150,100,50,50);
     rect(225,100,50,50);
     rect(300,100,50,50);
+    //second row
+    rect(150,175,50,50);
+    rect(225,175,50,50);
+    rect(300,175,50,50);
+    //third row
+    rect(150,250,50,50);
+    rect(225,250,50,50);
+    rect(300,250,50,50);
+    //fourth row
+    rect(150,325,50,50);
+    rect(225,325,50,50);
+    rect(300,325,50,50);
+     //fifth row
+    rect(150,400,50,50);
+    rect(225,400,50);
+    rect(300,400,50,50);
+    //sixth row 
+    rect(150,250,50,50);
+    rect(225,250,50,50);
+    rect(300,250,50,50);
+
+    windows.red = mouseX;
+    windows.green =mouseX;
 }
