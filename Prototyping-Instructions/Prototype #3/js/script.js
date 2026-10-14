@@ -292,8 +292,17 @@ function setup() {
 function draw() {
     background(248,245,235);
 
+    //background radial gradient
+    push(); 
+    drawingContext.shadowBlur = 400;
+    drawingContext.shadowColor = color(255,100,100);
+    fill(248,245,235)
+    ellipse(350,350,450,450);
+    pop();
+
+
     drawingContext.shadowBlur = 32;
-    drawingContext.shadowColor = color(250,250,250);
+    drawingContext.shadowColor = color(200,200,200);
 
     backgroundCircles();
     middleCircles();
@@ -301,8 +310,8 @@ function draw() {
     snakeMouth();
 
     push();
-    drawingContext.shadowBlur = 5;
-    drawingContext.shadowColor = color(150,150,250);
+    drawingContext.shadowBlur = 3;
+    drawingContext.shadowColor = color(100,100,250);
     scaleDetails();
     pop();
 
