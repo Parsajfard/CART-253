@@ -1,5 +1,5 @@
 /**
- * Building Night Lights
+ * Building Lights
  * Parsa Fard
  * 
  * Variables Prototype #2
@@ -7,6 +7,7 @@
 
 "use strict";
 
+//create sky object
 let sky = {
     red:0,
     green:0,
@@ -15,7 +16,7 @@ let sky = {
     y:250,
     size:500
 }
-
+//define function to draw a building 
 function building() {
     push();
     noStroke();
@@ -23,6 +24,7 @@ function building() {
     rect(100,50,300,500);
 }
 
+//create window object
 let windows = {
     red:0,
     green:0,
@@ -38,12 +40,13 @@ function setup() {
 
 }
 
-
-
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * the drawing creates a building and sky that changes colours when the user moves their mouse to the right. 
+ * The windows light up and start to glow when the mouse moves right. 
 */
 function draw() {
+
+    //create background using sky object and control colour variables using mouse X position. 
     background(sky.red,sky.green,sky.blue);
     sky.blue = mouseX;
     sky.green = (mouseX-500)
@@ -56,9 +59,11 @@ function draw() {
     //draw windows
     push();
 
-    drawingContext.shadowBlur = mouseX-500;                 // The radius/size of the glow
+    //add glow to the window that increases when mouse moves right 
+    drawingContext.shadowBlur = mouseX-500;               
     drawingContext.shadowColor = color(250,250,250); 
 
+    //draw windows
     fill(windows.red,windows.green,windows.blue);
     //first row
     rect(150,100,50,50);
@@ -85,6 +90,7 @@ function draw() {
     rect(225,250,50,50);
     rect(300,250,50,50);
 
+    //make windows turn yellow when mouse moves to the right of the canvas. 
     windows.red = mouseX;
     windows.green =mouseX;
 
