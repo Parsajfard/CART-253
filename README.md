@@ -7,7 +7,7 @@ Welcome to Parsa's CART 253 Directory. The purpose of this website is to organiz
 Here is a link ot the project I lead at Concordia University's Innovation Lab" Agripulse.ca 
 
 ## Prototyping-Instructions
-
+[Journal Link] (https://parsajfard.github.io/CART-253/JOURNAL.md)
 Prototype #1: Dandelion
 
 [Web Link](https://parsajfard.github.io/CART-253/Prototyping-Instructions/Prototype1-Dandelion/)
