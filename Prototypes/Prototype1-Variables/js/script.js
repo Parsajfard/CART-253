@@ -1,8 +1,8 @@
 /**
- * Variables Prototype 1
+ * Laser Light Show
  * Parsa Fard
  * 
- * This is variables prototype 1
+ * This is variables prototype #1
  */
 
 "use strict";
@@ -14,24 +14,28 @@ function setup() {
     createCanvas(500,500);
 }
 
+//define function that draws the stage of the light show
 function stage() {
     noStroke();
-    fill(230,230,230);
-    rect(0,400,100);
+    fill(20,20,20);
+    rect(0,400,500);
 }
 
 /**
- * 
+ * //draw the stage and synchronized lights 
 */
 function draw() {
     background(0,0,0);
+
+    //draw stage
+    stage();
 
     //draw the circle 
     push();
     drawingContext.shadowBlur = 10;                 // The radius/size of the glow
     drawingContext.shadowColor = color(250,250,250); 
-    fill(100,100,255);
-    stroke(0,0,250);
+    fill(100,100,mouseX);
+    stroke(mouseX * 3,mouseY * 3,0);
 
     //right side lights
     line(mouseX+50,mouseY-50,250,400);
@@ -45,8 +49,8 @@ function draw() {
     push();
     drawingContext.shadowBlur = 10;                 // The radius/size of the glow
     drawingContext.shadowColor = color(250,250,250); 
-    fill(100,100,255);
-    stroke(0,0,250);
+    fill(100,100,mouseX);
+    stroke(0,mouseY * 3,mouseX * 3);
 
     //right side lights
     line(mouseY+50,mouseX-50,50,400);
@@ -54,8 +58,5 @@ function draw() {
     line(mouseY+150,mouseX-150,200,400);
     line(mouseY+200,mouseX-200,250,400);
     pop();
-
-    //draw stage
-    stage();
 
 }
