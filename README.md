@@ -9,7 +9,9 @@ Here is a link ot the project I lead at Concordia University's Innovation Lab" A
 ## Prototyping-Instructions
 
 Prototype #1: Dandelion
+https://parsajfard.github.io/CART-253/Prototyping-Instructions/Prototype1-Dandelion/
 
+[Web Link](https://parsajfard.github.io/CART-253/Prototyping-Instructions/Prototype1-Dandelion/)
 
 <img width="1470" height="720" alt="Screenshot 2026-10-14 at 12 58 53 PM" src="https://github.com/user-attachments/assets/e0b96102-7874-4fd1-a670-3fd75132c0f2" />
 
