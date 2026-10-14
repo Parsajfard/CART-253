@@ -1,12 +1,12 @@
 /**
- * Abstract Penguin
+ * Abstract Snake
  * Parsa Fard
  * 
- * this is a drawing of an abstract penguin
+ * this is a drawing of an abstract Snake
  */
 
 "use strict";
-
+//function draws the main circles of the body of the snake
 function backgroundCircles() {
     //first row of circles
     push();
@@ -50,6 +50,7 @@ function backgroundCircles() {
     ellipse(600,600,100,100);
 }
 
+//function draws the middle circles of the snake body
 function middleCircles() {
     //first row of circles
     push();
@@ -94,6 +95,7 @@ function middleCircles() {
     pop();
 }
 
+//function draws the eyes of the snake
 function eyeballs(){
     //eyeball
     push();
@@ -135,7 +137,7 @@ function snakeMouth(){
     line(100,434,100,366);
     pop();
 }
-
+//function draws the top scales of the snake
 function snakeScales(){
     //pink scales
     push();
@@ -176,7 +178,6 @@ function snakeScales(){
     ellipse(100,100,40,40);
     ellipse(200,100,40,40);
     ellipse(300,100,40,40);
-    ellipse(400,100,40,40);
     ellipse(500,100,40,40);
     ellipse(600,100,50,50);
     //second row of circles 
@@ -195,13 +196,11 @@ function snakeScales(){
      //fifth row of circles 
     ellipse(300,500,40,40);
     ellipse(400,500,40,40);
-    ellipse(500,500,40,40);
     ellipse(600,500,40,40);
     ellipse(600,500,40,40);
       //6th row of circles 
     ellipse(100,600,40,40);
     ellipse(200,600,40,40);
-    ellipse(300,600,40,40);
     ellipse(400,600,40,40);
     ellipse(500,600,40,40);
     ellipse(600,600,40,40);
@@ -209,6 +208,7 @@ function snakeScales(){
     pop();
 }
 
+//function draws the scale details of the snake
 function scaleDetails(){
     //pink scales
     push();
@@ -286,9 +286,8 @@ function setup() {
     createCanvas(700,700);
 }
 
-
 /**
- * draw function draws the dog and hot dog on the canvas. */
+ * draw the snake and background. */
 function draw() {
     background(248,245,235);
 
@@ -300,27 +299,23 @@ function draw() {
     ellipse(350,350,450,450);
     pop();
 
-
+    //add glow to snake drawing
     drawingContext.shadowBlur = 32;
     drawingContext.shadowColor = color(200,200,200);
 
+    //call snake drawing functions
     backgroundCircles();
     middleCircles();
     eyeballs();
     snakeMouth();
 
+    //create scale details with added glow
     push();
     drawingContext.shadowBlur = 3;
     drawingContext.shadowColor = color(100,100,250);
     scaleDetails();
     pop();
 
+    //add top scales
     snakeScales();
-
-
-
-
-    
-
-
 }
