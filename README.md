@@ -17,9 +17,16 @@ Prototype #1: Dandelion
 
 Prototype #2: Abstract Drawing
 
+[Web Link](https://parsajfard.github.io/CART-253/Prototyping-Instructions/Prototype2-AbstractDrawing/)
+[Repo Link](https://github.com/Parsajfard/CART-253/tree/main/Prototyping-Instructions/Prototype2-AbstractDrawing)
+
 <img width="1470" height="800" alt="Screenshot 2026-10-14 at 1 03 30 PM" src="https://github.com/user-attachments/assets/8a72b409-ec45-4f04-8c45-cb2769d2ab31" />
 
 Prototype #3: Abstract Snake
+
+[Web Link]([https://parsajfard.github.io/CART-253/Prototyping-Instructions/Prototype2-AbstractDrawing/](https://parsajfard.github.io/CART-253/Prototyping-Instructions/Prototype3-AbstractSnake/)
+[Repo Link]([https://github.com/Parsajfard/CART-253/tree/main/Prototyping-Instructions/Prototype2-AbstractDrawing](https://github.com/Parsajfard/CART-253/tree/main/Prototyping-Instructions/Prototype3-AbstractSnake)
+
 
 <img width="1470" height="801" alt="Screenshot 2026-10-14 at 1 04 54 PM" src="https://github.com/user-attachments/assets/28e70478-21e7-4570-8162-3120ade203cc" />
 
