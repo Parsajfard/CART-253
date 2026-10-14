@@ -130,11 +130,153 @@ function snakeMouth(){
     pop();
     //tougue line
     push();
-    noStroke();
-    fill(250,70,80);
-    ellipse(100,400,50,70);
+    stroke(150,50,50);
+    strokeWeight(2);
+    line(100,434,100,366);
     pop();
+}
 
+function snakeScales(){
+    //pink scales
+    push();
+    noStroke();
+    fill(240,160,160);
+    ellipse(100,100,50,50);
+    ellipse(200,100,40,40);
+    ellipse(300,100,50,50);
+    ellipse(400,100,40,40);
+    ellipse(500,100,50,50);
+    ellipse(600,100,50,50);
+    //second row of circles 
+    ellipse(100,200,40,40);
+    ellipse(200,200,50,50);
+    ellipse(400,200,60,60);
+    ellipse(500,200,50,50);
+    ellipse(600,200,40,40);
+     //third row of circles 
+    ellipse(300,300,50,50);
+    ellipse(500,300,50,50);
+    ellipse(600,300,50,50);
+     //fourth row of circles 
+    ellipse(500,400,50,50);
+    ellipse(600,400,50,50);
+     //fifth row of circles 
+    ellipse(300,500,50,50);
+    ellipse(500,500,50,50);
+      //6th row of circles 
+    ellipse(100,600,50,50);
+    ellipse(300,600,50,50);
+    ellipse(600,600,50,50);
+    pop();
+    //green scales
+    //first row
+    push();
+    noStroke();
+    fill(150,250,150);
+    ellipse(100,100,40,40);
+    ellipse(200,100,40,40);
+    ellipse(300,100,40,40);
+    ellipse(400,100,40,40);
+    ellipse(500,100,40,40);
+    ellipse(600,100,50,50);
+    //second row of circles 
+    ellipse(100,200,40,40);
+    ellipse(200,200,40,40);
+    ellipse(400,200,40,40);
+    ellipse(500,200,40,40);
+    ellipse(600,200,40,40);
+     //third row of circles 
+    ellipse(300,300,40,40);
+    ellipse(500,300,40,40);
+    ellipse(600,300,40,40);
+     //fourth row of circles 
+    ellipse(500,400,40,40);
+    ellipse(600,400,40,40);
+     //fifth row of circles 
+    ellipse(300,500,40,40);
+    ellipse(400,500,40,40);
+    ellipse(500,500,40,40);
+    ellipse(600,500,40,40);
+    ellipse(600,500,40,40);
+      //6th row of circles 
+    ellipse(100,600,40,40);
+    ellipse(200,600,40,40);
+    ellipse(300,600,40,40);
+    ellipse(400,600,40,40);
+    ellipse(500,600,40,40);
+    ellipse(600,600,40,40);
+    ellipse(600,600,40,40);
+    pop();
+}
+
+function scaleDetails(){
+    //pink scales
+    push();
+    noStroke();
+    fill(50,50,250);
+    //first row of circles
+    ellipse(100,100,60,60);
+    ellipse(400,100,40,40);
+    ellipse(500,100,60,60);
+    ellipse(600,100,50,50);
+    //second row of circles 
+    ellipse(400,200,70,70);
+    ellipse(500,200,55,55);
+    ellipse(600,200,40,40);
+     //third row of circles 
+    ellipse(300,300,60,60);
+    ellipse(500,300,50,50);
+    ellipse(600,300,50,50);
+     //fourth row of circles 
+    ellipse(500,400,60,60);
+    ellipse(600,400,50,50);
+     //fifth row of circles 
+    ellipse(300,500,55,55);
+    ellipse(500,500,55,55);
+      //6th row of circles 
+    ellipse(100,600,50,50);
+    ellipse(300,600,60,60);
+    ellipse(600,600,50,50);
+    pop();
+    //green scales
+    //first row
+    push();
+    noStroke();
+    fill(250,120,50);
+    ellipse(100,100,40,40);
+    ellipse(200,100,50,50);
+    ellipse(300,100,40,40);
+    ellipse(400,100,45,45);
+    ellipse(500,100,40,40);
+    ellipse(600,100,50,50);
+    //second row of circles 
+    ellipse(100,200,40,40);
+    ellipse(200,200,40,40);
+    ellipse(400,200,50,50);
+    ellipse(500,200,40,40);
+    ellipse(600,200,40,40);
+     //third row of circles 
+    ellipse(300,300,40,40);
+    ellipse(500,300,60,60);
+    ellipse(600,300,40,40);
+     //fourth row of circles 
+    ellipse(500,400,50,50);
+    ellipse(600,400,40,40);
+     //fifth row of circles 
+    ellipse(300,500,40,40);
+    ellipse(400,500,40,40);
+    ellipse(500,500,45,45);
+    ellipse(600,500,40,40);
+    ellipse(600,500,40,40);
+      //6th row of circles 
+    ellipse(100,600,40,40);
+    ellipse(200,600,40,40);
+    ellipse(300,600,50,50);
+    ellipse(400,600,40,40);
+    ellipse(500,600,60,60);
+    ellipse(600,600,40,40);
+    ellipse(600,600,40,40);
+    pop();
 }
 
 /**
@@ -150,12 +292,23 @@ function setup() {
 function draw() {
     background(248,245,235);
 
+    drawingContext.shadowBlur = 32;
+    drawingContext.shadowColor = color(250,250,250);
+
     backgroundCircles();
     middleCircles();
     eyeballs();
     snakeMouth();
 
-    
+    push();
+    drawingContext.shadowBlur = 5;
+    drawingContext.shadowColor = color(150,150,250);
+    scaleDetails();
+    pop();
+
+    snakeScales();
+
+
 
 
     
