@@ -10,12 +10,16 @@ Here is a link ot the project I lead at Concordia University's Innovation Lab" A
 
 Prototype #1: Dandelion
 
+
 <img width="1470" height="720" alt="Screenshot 2026-10-14 at 12 58 53 PM" src="https://github.com/user-attachments/assets/e0b96102-7874-4fd1-a670-3fd75132c0f2" />
 
 Prototype #2: Abstract Drawing
 
+<img width="1470" height="800" alt="Screenshot 2026-10-14 at 1 03 30 PM" src="https://github.com/user-attachments/assets/8a72b409-ec45-4f04-8c45-cb2769d2ab31" />
 
+Prototype #3: Abstract Snake
 
+<img width="1470" height="801" alt="Screenshot 2026-10-14 at 1 04 54 PM" src="https://github.com/user-attachments/assets/28e70478-21e7-4570-8162-3120ade203cc" />
 
 ## Reflective Journal
 
