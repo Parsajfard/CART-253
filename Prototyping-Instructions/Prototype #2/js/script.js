@@ -73,8 +73,6 @@ function centerLine() {
     pop();
 }
 
-
-
 /**
  * The setup creates the canvas. 
 */
@@ -82,15 +80,15 @@ function setup() {
     createCanvas(700,700);
 }
 
-
 /**
- * draw function draws the dog and hot dog on the canvas. */
+ * call functions that draw the abstract circles and glowing center line */
 function draw() {
     background(225, 225, 230);
 
     //draw a center line that is behind the circles
     centerLine();
 
+    //draw the first set of circles
     abstractCircles();
 
     //mirror abstract circles over x-axis
