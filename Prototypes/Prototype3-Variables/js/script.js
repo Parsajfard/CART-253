@@ -1,24 +1,27 @@
 /**
- * Title of Project
- * Author Name
+ * Abstract Clock Face
+ * Parsa Fard
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This program creates an abstract clock face
  */
 
 "use strict";
 
+
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * create Canvas 
 */
 function setup() {
+    createCanvas(500,500);
 
 }
-
 
 /**
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    background(250,245,240);
+
+    drawCircle();
 
 }
