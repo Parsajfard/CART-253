@@ -12,6 +12,8 @@
 */
 function setup() {
     createCanvas(500,500);
+    background (66,94,85);
+    angleMode(DEGREES)
 }
 
 /**
@@ -20,15 +22,20 @@ function setup() {
 function draw() {
     background(250,245,240);
 
+    translate (width/2,height/2);
+
     //get the time
     let hr = hour()
     let mn = minute()
     let sc = second()
 
-    let tt = str(hr)+" : "+str(mn)+" : "+str(sc);
-    stroke(20)
-    fill(20)
-    textSize(20)
-    text(tt,50,50)
+    //clock hands 
+    strokeWeight(20);
+    noFill();
+
+    //seconds
+    stroke(100,150,250);
+    let secondAngle = map(sc, 0, 60, 0, 360);
+    arc(0,0,300,300,0, secondAngle); //
 
 }
