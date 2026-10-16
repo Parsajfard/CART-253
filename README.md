@@ -6,6 +6,22 @@ Welcome to Parsa's CART 253 Directory. The purpose of this website is to organiz
 
 Here is a link ot the project I lead at Concordia University's Innovation Lab" Agripulse.ca 
 
+## Prototyping-Variables 
+[Journal Link](https://parsajfard.github.io/CART-253/JOURNAL.md)
+
+Prototype #1: Laser Light Show
+
+[Web Link](https://parsajfard.github.io/CART-253/![Uploading Screenshot 2026-10-16 at 12.39.06 PM.png…]()/Prototype1-Variables/)
+[Repo Link](https://github.com/Parsajfard/CART-253/tree/main/Prototypes/Prototype1-Variables)
+
+<img width="1470" height="797" alt="Screenshot 2026-10-16 at 12 39 29 PM" src="https://github.com/user-attachments/assets/efa49469-25e1-4543-9cef-9b4c62c9cbac" />
+
+Prototype #2: Building Lights
+
+[Web Link](https://parsajfard.github.io/CART-253/Prototypes/Prototype1-Variables/)
+[Repo Link](
+
+
 ## Prototyping-Instructions
 [Journal Link](https://parsajfard.github.io/CART-253/JOURNAL.md)
 
