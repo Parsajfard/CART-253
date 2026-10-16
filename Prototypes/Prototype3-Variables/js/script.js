@@ -61,10 +61,25 @@ function draw() {
     triangle(rocket.body.x, rocket.body.y, 50, rocket.body.y, rocket.body.x+50, rocket.body.y-80);
 
     //draw the jets of the rocket 
+    //jet 1
     push();
     noStroke()
     fill(90,90,90);
-    rect(rocket.body.x-20, rocket.body.y+70, 40,100,10)
+    rect(rocket.body.x-10, rocket.body.y+70, 30,100,10);
+    pop();
 
+    //jet 2
+    push(); 
+    noStroke();
+    fill(90,90,90);
+    rect(rocket.body.x+80, rocket.body.y+70, 30,100,10);
+    pop();
+
+    //jet 3
+    push(); 
+    noStroke();
+    fill(90,90,90);
+    rect(rocket.body.x+30, rocket.body.y+80, 40,100,10);
+    pop();
 
 }
