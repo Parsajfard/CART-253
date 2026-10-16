@@ -11,8 +11,7 @@ Here is a link ot the project I lead at Concordia University's Innovation Lab" A
 
 Prototype #1: Laser Light Show
 
-[Web Link](https://parsajfard.github.io/CART-253/Prototypes/Proto![Uploading Screenshot 2026-10-16 at 12.49.38 PM.png…]()
-type1-Variables/)
+[Web Link](https://parsajfard.github.io/CART-253/Prototypes/Prototype1-Variables/)
 [Repo Link](https://github.com/Parsajfard/CART-253/tree/main/Prototypes/Prototype1-Variables)
 
 <img width="1465" height="690" alt="Screenshot 2026-10-16 at 12 38 55 PM" src="https://github.com/user-attachments/assets/41ca6070-9ae0-4763-9d1e-738724bba515" />
