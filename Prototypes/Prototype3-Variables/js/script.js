@@ -27,7 +27,7 @@ let rocket = {
 function stars() {
     push();
     fill(200,200,200);
-    ellipse(random(5),random(5),2,2);
+    ellipse(random(frameCount),random(frameCount),2,2);
     pop();
 }
 
@@ -106,8 +106,6 @@ function draw() {
     strokeWeight(8);
     ellipse(rocket.body.x+50, rocket.body.y+10, 40,60);
     pop();
-
-    
 }
 
 
