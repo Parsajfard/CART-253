@@ -59,8 +59,12 @@ function draw() {
     noStroke();
     fill(80,80,80);
     triangle(rocket.body.x, rocket.body.y, 50, rocket.body.y, rocket.body.x+50, rocket.body.y-80);
-    
 
+    //draw the jets of the rocket 
+    push();
+    noStroke()
+    fill(90,90,90);
+    rect(rocket.body.x-20, rocket.body.y+70, 40,100,10)
 
 
 }
