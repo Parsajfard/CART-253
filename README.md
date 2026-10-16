@@ -14,6 +14,15 @@ Prototype #1: Laser Light Show
 [Web Link](https://parsajfard.github.io/CART-253/![Uploading Screenshot 2026-10-16 at 12.39.06 PM.png…]()/Prototype1-Variables/)
 [Repo Link](https://github.com/Parsajfard/CART-253/tree/main/Prototypes/Prototype1-Variables)
 
+Prototype #2: Building Light Cycle
+
+[Web Link](https://github.com/Parsajfard/CART-253/tree/main/Prototypes/Prototype1-Variables)
+[Repo Link](
+
+<img width="1470" height="800" alt="Screenshot 2026-10-16 at 12 43 55 PM" src="https://github.com/user-attachments/assets/81ee0033-2173-4171-92f2-9426f304a32f" />
+
+
+
 <img width="1470" height="797" alt="Screenshot 2026-10-16 at 12 39 29 PM" src="https://github.com/user-attachments/assets/efa49469-25e1-4543-9cef-9b4c62c9cbac" />
 
 Prototype #2: Building Lights
