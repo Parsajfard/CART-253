@@ -24,6 +24,14 @@ let rocket = {
     acceleration: 0.4
 }
 
+function stars() {
+    push();
+    fill(200,200,200);
+    ellipse(random(5),random(5),2,2);
+    pop();
+}
+
+
 
 //Creates the canvas
 function setup() {
@@ -82,4 +90,24 @@ function draw() {
     rect(rocket.body.x+30, rocket.body.y+80, 40,100,10);
     pop();
 
+    let emissionOne = rocket.body.y + [sin(frameCount) + 300];
+
+    //draw fire coming out of jets
+    push();
+
+    noStroke();
+    fill(200,100,50);
+    triangle(rocket.body.x-10, rocket.body.y+160, rocket.body.x+20, rocket.body.y+160, rocket.body.x +5, emissionOne);
+
+    //draw window 
+    push();
+    fill(0,50,100);
+    stroke(100,100,100);
+    strokeWeight(8);
+    ellipse(rocket.body.x+50, rocket.body.y+10, 40,60);
+    pop();
+
+    
 }
+
+
