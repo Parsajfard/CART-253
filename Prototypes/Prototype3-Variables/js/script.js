@@ -20,9 +20,12 @@ let rocket = {
     },
     angle: 0,
     maneuver:0.3,
-    velocity: 0.5,
-    acceleration: 0.4
+    velocity: 0.1,
+    acceleration: 0.1,
+    emissionJitter:0
+    
 }
+
 
 function stars() {
     push();
@@ -55,6 +58,25 @@ function draw() {
     rocket.angle += 0.1;
     rocket.angle += rocket.maneuver;
 
+    rocket.emissionJitter+=5
+    let delta  = sin(rocket.emissionJitter)
+    console.log(delta)
+    let emissionOne = rocket.body.y+300 +delta*5;
+    //console.log(sin(rocket.emissionJitter));
+
+     //draw fire coming out of jets 
+    push();
+    drawingContext.shadowBlur = 50;               
+    drawingContext.shadowColor = color(250,100,100); 
+    noStroke();
+    fill(200,100,50);
+    //jet fire 1
+    triangle(rocket.body.x-10, rocket.body.y+160, rocket.body.x+20, rocket.body.y+160, rocket.body.x +5, emissionOne);
+    //jet fire 2
+    triangle(rocket.body.x+80, rocket.body.y+160, rocket.body.x+110, rocket.body.y+160, rocket.body.x +90, emissionOne);
+    //jet fire 3
+    triangle(rocket.body.x+30, rocket.body.y+160, rocket.body.x+70, rocket.body.y+160, rocket.body.x +50, emissionOne);
+    pop();
 
     push();
     noStroke();
@@ -68,6 +90,20 @@ function draw() {
     fill(80,80,80);
     triangle(rocket.body.x, rocket.body.y, 50, rocket.body.y, rocket.body.x+50, rocket.body.y-80);
 
+    //draw window 
+    push();
+    drawingContext.shadowBlur = 20;               
+    drawingContext.shadowColor = color(200,200,200); 
+    fill(0,50,100);
+    stroke(100,100,100);
+    strokeWeight(8);
+    ellipse(rocket.body.x+50, rocket.body.y+10, 40,60);
+    pop();
+
+    drawJets();
+}
+
+function drawJets(){
     //draw the jets of the rocket 
     //jet 1
     push();
@@ -89,23 +125,5 @@ function draw() {
     fill(90,90,90);
     rect(rocket.body.x+30, rocket.body.y+80, 40,100,10);
     pop();
-
-    let emissionOne = rocket.body.y + [sin(frameCount) + 300];
-
-    //draw fire coming out of jets
-    push();
-
-    noStroke();
-    fill(200,100,50);
-    triangle(rocket.body.x-10, rocket.body.y+160, rocket.body.x+20, rocket.body.y+160, rocket.body.x +5, emissionOne);
-
-    //draw window 
-    push();
-    fill(0,50,100);
-    stroke(100,100,100);
-    strokeWeight(8);
-    ellipse(rocket.body.x+50, rocket.body.y+10, 40,60);
-    pop();
 }
-
 

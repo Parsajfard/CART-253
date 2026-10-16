@@ -52,6 +52,7 @@ function draw() {
     sky.green = (mouseX-500)
     sky.red = (mouseX-500)
     
+    //add glow to the window that increases when mouse moves right 
     
     //draw building
     building();
@@ -61,7 +62,7 @@ function draw() {
 
     //add glow to the window that increases when mouse moves right 
     drawingContext.shadowBlur = mouseX-500;               
-    drawingContext.shadowColor = color(250,250,250); 
+   drawingContext.shadowColor = color(250,250,250); 
 
     //draw windows
     fill(windows.red,windows.green,windows.blue);
