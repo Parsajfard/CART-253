@@ -1,24 +1,26 @@
 /**
- * Title of Project
- * Author Name
+ * Conditionals Prototype 1
+ * Parsa Fard
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This is Prototype 1 of Conditionals 
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Setup creates canvas 
 */
 function setup() {
+    createCanvas(500,500);
 
 }
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * 
 */
 function draw() {
+    background(0);
+    
 
 }
