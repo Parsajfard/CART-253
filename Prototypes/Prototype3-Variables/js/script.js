@@ -105,7 +105,7 @@ function draw() {
     stroke(100,100,100);
     strokeWeight(8);
     ellipse(rocket.body.x+50, rocket.body.y+10, 40,60);
-    pop()
+    pop();
 }
 
 
