@@ -1,4 +1,4 @@
-<img width="4160" height="2773" alt="DSCF2940" src="https://github.com/user-attachments/assets/8934f678-24f9-434c-a89e-ed827511df75" />
+<img width="633" height="421" alt="DSCF2940" src="https://github.com/user-attachments/assets/8934f678-24f9-434c-a89e-ed827511df75" />
 
 # PARSA'S CART 253 PLAYGROUND
 
