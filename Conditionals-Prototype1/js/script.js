@@ -31,12 +31,13 @@ function setup() {
 function draw() {
     background(0,0,0);
     
-    laserGun();
+    drawLaserGun();
+    drawLaserGunTrigger();
 
 }
 
 //function to call laser gun
-function laserGun() {
+function drawLaserGun() {
     push();
     noStroke();
     fill(100,100,100);
@@ -84,4 +85,13 @@ function laserGun() {
     fill(110,110,110);
     ellipse(250,155,10,40);
     pop();
+}
+
+function drawLaserGunTrigger() {
+    push();
+    noStroke();
+    fill(0,200,0);
+    triangle(155,170,155,190,190,170);
+    pop();
+
 }
