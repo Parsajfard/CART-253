@@ -16,10 +16,14 @@ let trigger = {
 
 
 let laser = {
-    x: 5,
-    y: 5,
-    w: 5,
-    h: 6, 
+    x: 230,
+    y: 150,
+    w: 25,
+    h: 10, 
+    startingPoint: {
+        x:150,
+        y:150
+    }
 }
 
 
@@ -38,6 +42,7 @@ function setup() {
 function draw() {
     background(0,0,0);
     
+    drawLaser();
     drawLaserGunTrigger();
     drawLaserGun();
 
@@ -100,4 +105,18 @@ function drawLaserGunTrigger() {
     fill(0,200,0);
     ellipse(trigger.x,trigger.y,trigger.size);
     pop();
+}
+
+function drawLaser() {
+    push();
+    noStroke();
+    fill(0,200,0);
+    rect(laser.x, laser.y, laser.w, laser.h)
+    pop();
+
+}
+
+function shootLaser() {
+    let d= dist(mouseX, mouseY, trigger.x, trigger.y);
+    if (mouseIsPressed === true && d < trigger.size/2);
 }
