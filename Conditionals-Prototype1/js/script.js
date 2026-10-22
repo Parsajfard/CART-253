@@ -45,6 +45,7 @@ function draw() {
     drawLaser();
     drawLaserGunTrigger();
     drawLaserGun();
+    shootLaser();
 
 }
 
@@ -109,7 +110,10 @@ function drawLaserGunTrigger() {
 
 function drawLaser() {
     push();
-    noStroke();
+
+    drawingContext.shadowBlur = 100;
+    drawingContext.shadowColor = 100,300,30;
+
     fill(0,200,0);
     rect(laser.x, laser.y, laser.w, laser.h)
     pop();
@@ -118,5 +122,10 @@ function drawLaser() {
 
 function shootLaser() {
     let d= dist(mouseX, mouseY, trigger.x, trigger.y);
-    if (mouseIsPressed === true && d < trigger.size/2);
+    if (mouseIsPressed === true && d < trigger.size) {
+        laser.x += 10;
+    }
+    if (laser.x === 500) {
+        laser.x = laser.startingPoint.x;
+    }
 }
