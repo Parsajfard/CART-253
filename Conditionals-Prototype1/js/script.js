@@ -8,8 +8,16 @@
 
 "use strict";
 
+let LaserGun = {
+    x: 5,
+    y: 5,
+    w: 5,
+    h: 6, 
+}
+
+
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Create Canvas in Setup
 */
 function setup() {
     createCanvas(500,500);
@@ -24,3 +32,5 @@ function draw() {
     background(0,0,0);
 
 }
+
+//
