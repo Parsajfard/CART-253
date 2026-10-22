@@ -8,6 +8,13 @@
 
 "use strict";
 
+let trigger = {
+    x: 155,
+    y: 170,
+    size: 50
+}
+
+
 let laser = {
     x: 5,
     y: 5,
@@ -31,8 +38,8 @@ function setup() {
 function draw() {
     background(0,0,0);
     
-    drawLaserGun();
     drawLaserGunTrigger();
+    drawLaserGun();
 
 }
 
@@ -91,7 +98,6 @@ function drawLaserGunTrigger() {
     push();
     noStroke();
     fill(0,200,0);
-    triangle(155,170,155,190,190,170);
+    ellipse(trigger.x,trigger.y,trigger.size);
     pop();
-
 }
