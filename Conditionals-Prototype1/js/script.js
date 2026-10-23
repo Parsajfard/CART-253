@@ -47,6 +47,8 @@ function draw() {
     drawLaserGunTrigger();
     drawLaserGun();
     shootLaser();
+    drawAlien();
+    
 
 }
 
@@ -133,4 +135,44 @@ function shootLaser() {
         laser.x = laser.startingPoint.x;
         laser.moving = false;
     }
+}
+
+function drawAlien() {
+
+    //draw Alien Head 
+    push();
+    fill(255,255,255);
+    noStroke();
+    ellipse(400,160,70);
+    pop();
+
+    //draw Alien Eye 1
+    push();
+    fill(20,20,20);
+    noStroke();
+    ellipse(393,145,15);
+    pop();
+
+    //draw Alien Eye 2
+    push();
+    fill(20,20,20);
+    noStroke();
+    ellipse(380,160,15);
+    pop();
+
+    //draw Alien Eye 3
+    push();
+    fill(20,20,20);
+    noStroke();
+    ellipse(404,160,15);
+    pop();
+
+    //draw eye highlight 1
+    push();
+    fill(20,20,20);
+    noStroke();
+    ellipse(404,160,15);
+    pop();
+
+
 }
