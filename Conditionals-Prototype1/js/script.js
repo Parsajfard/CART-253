@@ -23,7 +23,8 @@ let laser = {
     startingPoint: {
         x:150,
         y:150
-    }
+    },
+    moving: false 
 }
 
 
@@ -123,9 +124,13 @@ function drawLaser() {
 function shootLaser() {
     let d= dist(mouseX, mouseY, trigger.x, trigger.y);
     if (mouseIsPressed === true && d < trigger.size) {
+        laser.moving = true;
+    }
+    if (laser.moving === true) {
         laser.x += 10;
     }
     if (laser.x === 500) {
         laser.x = laser.startingPoint.x;
+        laser.moving = false;
     }
 }
