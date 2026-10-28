@@ -27,6 +27,17 @@ let laser = {
     moving: false 
 }
 
+let alien = {
+    x: 400,
+    y: 160,
+    size: 80,
+    fill: {
+        r: 255, 
+        g: 255, 
+        b: 255
+    }
+}
+
 
 /**
  * Create Canvas in Setup
@@ -48,6 +59,7 @@ function draw() {
     drawLaserGun();
     shootLaser();
     drawAlien();
+    hurtAlien();
     
 
 }
@@ -120,7 +132,6 @@ function drawLaser() {
     fill(0,200,0);
     rect(laser.x, laser.y, laser.w, laser.h)
     pop();
-
 }
 
 function shootLaser() {
@@ -131,19 +142,29 @@ function shootLaser() {
     if (laser.moving === true) {
         laser.x += 10;
     }
-    if (laser.x === 500) {
+    if (laser.x === 420) {
         laser.x = laser.startingPoint.x;
         laser.moving = false;
     }
 }
 
+function hurtAlien() {
+    let d = dist(laser.x, laser.y, alien.x, alien.y);
+    if (d === alien.size/2) {
+        consol.login(d);
+        alien.size += 100;
+        alien.fill.g = 100;
+    }
+}
+
+
 function drawAlien() {
 
     //draw Alien Head 
     push();
-    fill(255,255,255);
+    fill(alien.fill.r,alien.fill.g,alien.fill.b);
     noStroke();
-    ellipse(400,160,70);
+    ellipse(alien.x,alien.y,alien.size);
     pop();
 
     //draw Alien Eye 1
@@ -169,10 +190,22 @@ function drawAlien() {
 
     //draw eye highlight 1
     push();
-    fill(20,20,20);
+    fill(250,250,250);
     noStroke();
-    ellipse(404,160,15);
+    ellipse(406,160,3);
     pop();
 
+    //draw eye highlight 2
+    push();
+    fill(250,250,250);
+    noStroke();
+    ellipse(382,160,3);
+    pop();
 
+    //draw eye highlight 3
+    push();
+    fill(250,250,250);
+    noStroke();
+    ellipse(395,144,3);
+    pop();
 }
