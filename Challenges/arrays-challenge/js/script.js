@@ -5,7 +5,7 @@
  * A ball that bounces around on the canvas
  */
 
-let balls = []; // Will create it with createBall()
+let ball = []; // Will create it with createBall()
 
 /**
  * Create the canvas and the ball
@@ -44,9 +44,11 @@ function createBall() {
 function draw() {
   background("#87ceeb");
   
-  moveBall(ball);
-  bounceBall(ball);
-  drawBall(ball);
+  for (let ball of balls) {
+    moveBall(ball);
+    bounceBall(ball);
+    drawBall(ball);
+}
 }
 
 /**
