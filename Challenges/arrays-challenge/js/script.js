@@ -24,8 +24,8 @@ function createBall() {
   // Create a ball object with appropriate properties
   const newBall = {
     // Position and dimensions
-    x: 200,
-    y: 200,
+    x: pmouseX,
+    y: pmouseY,
     size: 20,
     // Colour
     fill: "#000000",
@@ -48,6 +48,7 @@ function draw() {
     moveBall(ball);
     bounceBall(ball);
     drawBall(ball);
+    changeColour(ball);
 }
 }
 
@@ -57,6 +58,12 @@ function draw() {
 function moveBall(ball) {
   ball.x += ball.velocity.x;
   ball.y += ball.velocity.y;
+}
+
+function changeColour(ball) {
+    if (ball.x < 100) {
+        ball.fill = "#e00b59";
+    }
 }
 
 /**
