@@ -2,8 +2,7 @@
  * Conditionals Prototype 1
  * Parsa Fard
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This is a prototype of an alien getting hit by a laser from a laser gun. 
  */
 
 "use strict";
@@ -38,6 +37,7 @@ let alien = {
     }
 }
 
+let alienHit = false;
 
 /**
  * Create Canvas in Setup
@@ -150,10 +150,15 @@ function shootLaser() {
 
 function hurtAlien() {
     let d = dist(laser.x, laser.y, alien.x, alien.y);
-    if (d === alien.size/2) {
-        consol.login(d);
-        alien.size += 100;
-        alien.fill.g = 100;
+    if (d < alien.size/2) {
+        console.log(d);
+        alien.size += 10;
+        alien.fill.g -= 10;
+        alienHit = true; 
+
+        if (alienHit === true) {
+            drawText();
+        }
     }
 }
 
@@ -208,4 +213,15 @@ function drawAlien() {
     noStroke();
     ellipse(395,144,3);
     pop();
+
+    //draw the antenna 
+}
+
+function drawText() {
+    push(); 
+    fill(255);
+    textSize(24); 
+    textAlign(CENTER);
+    text("OWW!",250, 300);
+    pop(); 
 }
