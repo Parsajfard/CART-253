@@ -1,9 +1,8 @@
 /**
- * Title of Project
- * Author Name
+ * Conditionals Prototype #2 
+ * Parsa Fard
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This is a simple interface where the user picks their tool, perhaps for the start of an adventure. 
  */
 
 "use strict";
@@ -22,19 +21,19 @@ function setup() {
 */
 function draw() {
     background('skyblue');
-    complexCircles(width/2,height/2);
+    drawAxe(); 
+    
 
 
 }
 
-function complexCircles(x,y) {
-    push();
-    fill(255,191,0);
-    ellipse(x,y,80,80);
-    fill(255,2,255);
-    ellipse(x,y,60,60);
-    fill(255,191,0);
-    ellipse(x,y,40,40)
-    pop();
+function drawAxe() {
+
+    //draw the handle of the axe
+    push(); 
+    fill(255); 
+    noStroke(); 
+    rect(200,200,200,200)
+    pop(); 
 
 }
