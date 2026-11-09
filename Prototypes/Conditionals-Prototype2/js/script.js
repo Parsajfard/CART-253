@@ -2,7 +2,7 @@
  * Conditionals Prototype #2 
  * Parsa Fard
  * 
- * This is a simple interface where the user picks their tool, perhaps for the start of an adventure. 
+ * This is a simple drawing of a Yeti
  */
 
 "use strict";
@@ -21,7 +21,10 @@ function setup() {
 */
 function draw() {
     background('skyblue');
+
+    //call the functions that draw the yeti 
     drawYetiBody(); 
+    drawYetiEyes();
     
 
 
@@ -61,6 +64,15 @@ function drawYetiBody() {
 }
 
 function drawYetiEyes() {
-    
+
+    //drae eye balls
+    push(); 
+    fill(0);
+    noStroke(); 
+    circle(210,170,40); 
+     circle(285,170,40); 
+    pop(); 
+
+
 }
      
