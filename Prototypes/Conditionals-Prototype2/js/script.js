@@ -7,8 +7,20 @@
 
 "use strict";
 
+let eyeball = {
+    right: {
+        x: 210,
+        y:170
+    },
+    left: {
+        x: 285,
+        y:170
+    }
+}
+
+
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Setup creates canvas
 */
 function setup() {
     createCanvas(500,500); 
@@ -25,8 +37,7 @@ function draw() {
     //call the functions that draw the yeti 
     drawYetiBody(); 
     drawYetiEyes();
-    
-
+    moveEyes(); 
 
 }
 
@@ -70,9 +81,25 @@ function drawYetiEyes() {
     fill(0);
     noStroke(); 
     circle(210,170,40); 
-     circle(285,170,40); 
+    circle(285,170,40); 
     pop(); 
 
-
+    //draw highlights in the eye
+    push(); 
+    fill(255);
+    noStroke(); 
+    circle(eyeball.right.x,eyeball.right.y,10); 
+    circle(eyeball.left.x,eyeball.left.y,10); 
+    pop(); 
 }
      
+function moveEyes() {
+    if (mouseX > eyeball.right.x) {
+        eyeball.right.x += 2;
+        eyeball.left.x +=2; 
+    }
+    else if (mouseX < eyeball.right.x) {
+        eyeball.right.x -= 2; 
+        eyeball.left.x -= 2; 
+    }
+}
