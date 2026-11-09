@@ -29,15 +29,28 @@ function draw() {
 
 function drawYetiHead() {
 
-    //draw the handle of the axe
+    //draw the head of the Yeti
     push(); 
     fill(255);
     noStroke();
     arc(250, 200, 200, 200, PI, TWO_PI,);
     pop();
 
+    //draw the body of the Yeti
     push(); 
     fill(255); 
     noStroke(); 
+    rect(150,200,200,150);
+    pop(); 
+
+    //draw the right and left leg of the yeti 
+    push(); 
+    fill(255); 
+    noStroke(); 
+    rect(150,300,80,150,50); 
+    rect(270,300,80,150,50); 
+    pop(); 
+
+
 }
      
