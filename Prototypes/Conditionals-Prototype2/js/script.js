@@ -21,19 +21,23 @@ function setup() {
 */
 function draw() {
     background('skyblue');
-    drawAxe(); 
+    drawYetiHead(); 
     
 
 
 }
 
-function drawAxe() {
+function drawYetiHead() {
 
     //draw the handle of the axe
     push(); 
+    fill(255);
+    noStroke();
+    arc(250, 200, 200, 200, PI, TWO_PI,);
+    pop();
+
+    push(); 
     fill(255); 
     noStroke(); 
-    rect(200,200,200,200)
-    pop(); 
-
 }
+     
