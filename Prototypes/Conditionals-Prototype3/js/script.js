@@ -8,6 +8,10 @@
 
 "use strict";
 
+let rect1 = { x: 100, y:100};
+let rect2 = { x: 250, y:250};
+let rect3 = { x:400, y: 150};
+
 /**
  * The setup creates the canvas. 
 */
