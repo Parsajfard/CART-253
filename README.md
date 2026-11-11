@@ -48,12 +48,12 @@ Prototype #2: Building Light Cycle
 
 <img width="1470" height="800" alt="Screenshot 2026-10-16 at 12 43 55 PM" src="https://github.com/user-attachments/assets/81ee0033-2173-4171-92f2-9426f304a32f" />
 
-Prototype #3: Rocket Launch
+Prototype #3: 
 
-[Web Link](https://parsajfard.github.io/CART-253/Prototypes/Prototype3-Variables/)
+[Web Link](https://github.com/Parsajfard/CART-253/tree/main/Prototypes/Prototype3-Variables)
 [Repo Link](https://github.com/Parsajfard/CART-253/tree/main/Prototypes/Prototype3-Variables)
 
-<img width="1470" height="799" alt="Screenshot 2026-10-16 at 12 46 28 PM" src="https://github.com/user-attachments/assets/0c8f4558-e8b3-4924-944d-30138d898f88" />
+<img width="1351" height="781" alt="Screenshot 2026-11-11 at 5 25 30 PM" src="https://github.com/user-attachments/assets/dcbf9781-fa26-4242-a4c8-5911d4dfa347" />
 
 ## Prototyping-Instructions
 [Journal Link](https://parsajfard.github.io/CART-253/JOURNAL.md)
