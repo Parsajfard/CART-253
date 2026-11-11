@@ -2,11 +2,13 @@
  * Conditionals Prototype #2 
  * Parsa Fard
  * 
- * This is a simple drawing of a Yeti
+ * This is a simple drawing of a Yeti that looks at 
+ * the position of the mouth and opens it mouth when you hover over it. 
  */
 
 "use strict";
 
+//variables for the yeti's eyeball highlights 
 let eyeball = {
     right: {
         x: 210,
@@ -18,6 +20,7 @@ let eyeball = {
     }
 }
 
+//variables for the yeti's mouth
 let mouth = {
     x: 248, 
     y:200, 
@@ -38,7 +41,7 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * the draw function calls the functions necessary to draw the yeti. 
 */
 function draw() {
     background('skyblue');
@@ -51,6 +54,7 @@ function draw() {
     openYetiMouth();
 }
 
+//function that draws the yeti's body
 function drawYetiBody() {
 
     // draw the head of the Yeti
@@ -84,6 +88,7 @@ function drawYetiBody() {
     pop(); 
 }
 
+//function that draws the yeti's eyes
 function drawYetiEyes() {
 
     //drae eye balls
@@ -102,7 +107,8 @@ function drawYetiEyes() {
     circle(eyeball.left.x,eyeball.left.y,10); 
     pop(); 
 }
-     
+
+//function that allows the eyes to move
 function moveEyes() {
     if (mouseX > 250) {
         eyeball.right.x += 2;
@@ -125,11 +131,11 @@ function moveEyes() {
 
     eyeball.right.x = constrain(eyeball.right.x, 200,220); 
     eyeball.left.x = constrain(eyeball.left.x, 275, 295); 
-
-
-
+    eyeball.right.y = constrain(eyeball.right.y,160, 180);
+    eyeball.left.y = constrain(eyeball.left.y,160,180); 
 }
 
+//function that draws the mouth of the yeti
 function drawYetiMouth() {
     
     //draw the mouth 
@@ -140,6 +146,7 @@ function drawYetiMouth() {
     pop(); 
 }
 
+//function that allows the yeti's mouth to open
 function openYetiMouth() {
     if (dist(mouseX, mouseY, mouth.x, mouth.y) <30) {
         fill(0);
