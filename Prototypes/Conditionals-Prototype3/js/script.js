@@ -64,3 +64,12 @@ function drawRect(r) {
     rect(0,0,60,30); 
     pop(); 
 }
+
+function drawGradient() { 
+    let t = map(mouseY,0,height,0,1,true); 
+
+    let topColor = lerpColor(color('green'), color,('skyblue'), t);
+    let bottomColor = lerpColor(color('darkgreen'), color('purple'), t); 
+
+
+}
