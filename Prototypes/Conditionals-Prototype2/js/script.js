@@ -20,7 +20,7 @@ let eyeball = {
 
 let mouth = {
     x: 248, 
-    y:192, 
+    y:200, 
     width: 50, 
     height: 6, 
     closedHeight: 6, 
@@ -47,6 +47,8 @@ function draw() {
     drawYetiBody(); 
     moveEyes(); 
     drawYetiEyes();
+    drawYetiMouth();
+    openYetiMouth();
 }
 
 function drawYetiBody() {
@@ -120,8 +122,19 @@ function drawYetiMouth() {
     
     //draw the mouth 
     push(); 
-    fill(90,20,20); 
+    fill(0,20,20); 
     noStroke(); 
     ellipse(mouth.x, mouth.y, mouth.width, mouth.height); 
     pop(); 
+}
+
+function openYetiMouth() {
+    if (dist(mouseX, mouseY, mouth.x, mouth.y) <30) {
+        fill(0);
+        ellipse(mouth.x, mouth.y, mouth.width, mouth.openHeight);
+     }  
+     else {
+        fill(0);
+        ellipse(mouth.x, mouth.y, mouth.width, mouth.closedHeight);
+     }
 }
