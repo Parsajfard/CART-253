@@ -1,17 +1,18 @@
 /**
- * Title of Project
- * Author Name
+ * Conditionals Prototype #3
+ * Parsa Fard
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This is an abstract drawing of a series of rectangles that rotate 
+ * and avoid the user's mouse. 
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * The setup creates the canvas. 
 */
 function setup() {
+    createCanvas(500,500); 
 
 }
 
