@@ -18,6 +18,15 @@ let eyeball = {
     }
 }
 
+let mouth = {
+    x: 248, 
+    y:192, 
+    width: 50, 
+    height: 6, 
+    closedHeight: 6, 
+    openHeight: 40
+};
+
 
 /**
  * Setup creates canvas
