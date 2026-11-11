@@ -36,9 +36,8 @@ function draw() {
 
     //call the functions that draw the yeti 
     drawYetiBody(); 
-    drawYetiEyes();
     moveEyes(); 
-
+    drawYetiEyes();
 }
 
 function drawYetiBody() {
@@ -94,12 +93,16 @@ function drawYetiEyes() {
 }
      
 function moveEyes() {
-    if (mouseX > eyeball.right.x) {
+    if (mouseX > 250) {
         eyeball.right.x += 2;
         eyeball.left.x +=2; 
     }
-    else if (mouseX < eyeball.right.x) {
+    else if (mouseX < 250) {
         eyeball.right.x -= 2; 
         eyeball.left.x -= 2; 
     }
+
+    eyeball.right.x = constrain(eyeball.right.x, 200,220); 
+    eyeball.left.x = constrain(eyeball.left.x, 275, 295); 
+
 }
