@@ -6,6 +6,28 @@ Welcome to Parsa's CART 253 Directory. The purpose of this website is to organiz
 
 Here is a link ot the project I lead at Concordia University's Innovation Lab" Agripulse.ca 
 
+## Prototyping-Conditionals
+[Journal Link](https://parsajfard.github.io/CART-253/JOURNAL.md)
+
+Prototype #1: Laser 
+
+<img width="1407" height="792" alt="Screenshot 2026-11-11 at 5 21 15 PM" src="https://github.com/user-attachments/assets/a67c292b-014e-47b3-b86b-504c708587c9" />
+
+
+Prototype #2: Building Light Cycle
+
+[Web Link](https://github.com/Parsajfard/CART-253/tree/main/Prototypes/Prototype2-Variables)
+[Repo Link](https://github.com/Parsajfard/CART-253/tree/main/Prototypes/Prototype2-Variables)
+
+<img width="1470" height="800" alt="Screenshot 2026-10-16 at 12 43 55 PM" src="https://github.com/user-attachments/assets/81ee0033-2173-4171-92f2-9426f304a32f" />
+
+Prototype #3: Rocket Launch
+
+[Web Link](https://parsajfard.github.io/CART-253/Prototypes/Prototype3-Variables/)
+[Repo Link](https://github.com/Parsajfard/CART-253/tree/main/Prototypes/Prototype3-Variables)
+
+<img width="1470" height="799" alt="Screenshot 2026-10-16 at 12 46 28 PM" src="https://github.com/user-attachments/assets/0c8f4558-e8b3-4924-944d-30138d898f88" />
+
 ## Prototyping-Variables 
 [Journal Link](https://parsajfard.github.io/CART-253/JOURNAL.md)
 
