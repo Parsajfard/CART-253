@@ -11,15 +11,18 @@ Here is a link ot the project I lead at Concordia University's Innovation Lab" A
 
 Prototype #1: Laser 
 
-<img width="1407" height="792" alt="Screenshot 2026-11-11 at 5 21 15 PM" src="https://github.com/user-attachments/assets/a67c292b-014e-47b3-b86b-504c708587c9" />
+[Web Link] (https://parsajfard.github.io/CART-253/Prototypes/Conditionals-Prototype1/)
+[Repo Link] (https://github.com/Parsajfard/CART-253/tree/main/Prototypes/Conditionals-Prototype1)
 
+<img width="1407" height="792" alt="Screenshot 2026-11-11 at 5 21 15 PM" src="https://github.com/user-attachments/assets/a67c292b-014e-47b3-b86b-504c708587c9" />
 
 Prototype #2: Building Light Cycle
 
-[Web Link](https://github.com/Parsajfard/CART-253/tree/main/Prototypes/Prototype2-Variables)
-[Repo Link](https://github.com/Parsajfard/CART-253/tree/main/Prototypes/Prototype2-Variables)
+[Web Link](https://parsajfard.github.io/CART-253/Prototypes/Conditionals-Prototype2/)
+[Repo Link](https://github.com/Parsajfard/CART-253/tree/main/Prototypes/Conditionals-Prototype2)
 
-<img width="1470" height="800" alt="Screenshot 2026-10-16 at 12 43 55 PM" src="https://github.com/user-attachments/assets/81ee0033-2173-4171-92f2-9426f304a32f" />
+<img width="1294" height="792" alt="Screenshot 2026-11-11 at 5 23 18 PM" src="https://github.com/user-attachments/assets/a9dadaaa-2948-4a3e-94a3-ce7a19b84d45" />
+
 
 Prototype #3: Rocket Launch
 
