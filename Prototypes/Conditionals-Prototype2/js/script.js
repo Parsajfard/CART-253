@@ -113,8 +113,20 @@ function moveEyes() {
         eyeball.left.x -= 2; 
     }
 
+    if (mouseY > 170) {
+        eyeball.right.y += 2; 
+        eyeball.left.y += 2; 
+    }
+    else if (mouseY < 170) { 
+        eyeball.right.y -= 2; 
+        eyeball.left.y -= 2; 
+    }
+    
+
     eyeball.right.x = constrain(eyeball.right.x, 200,220); 
     eyeball.left.x = constrain(eyeball.left.x, 275, 295); 
+
+
 
 }
 
