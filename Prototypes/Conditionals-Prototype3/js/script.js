@@ -19,7 +19,6 @@ let angle = 0;
 */
 function setup() {
     createCanvas(500,500); 
-    background('green') 
 }
 
 
@@ -30,7 +29,7 @@ function draw() {
 
     angle += 0.03;
 
-    background('green') 
+    drawGradient(); 
 
     avoidMouse(rect1); 
     avoidMouse(rect2);
@@ -61,15 +60,19 @@ function drawRect(r) {
     rotate(angle); 
     fill(255); 
     noStroke(); 
-    rect(0,0,60,30); 
+    rect(0,0,60,30,20); 
     pop(); 
 }
 
 function drawGradient() { 
     let t = map(mouseY,0,height,0,1,true); 
 
-    let topColor = lerpColor(color('green'), color,('skyblue'), t);
+    let topColor = lerpColor(color('blue'), color('skyblue'), t);
     let bottomColor = lerpColor(color('darkgreen'), color('purple'), t); 
 
-
+    for (let y = 0; y < height; y++) { 
+        let c = lerpColor(topColor, bottomColor, y/height); 
+        stroke(c); 
+        line(0, y ,width, y); 
+    }
 }
