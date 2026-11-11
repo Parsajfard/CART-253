@@ -17,7 +17,10 @@ let rect3 = { x:400, y: 150};
 */
 function setup() {
     createCanvas(500,500); 
-
+    
+    drawRect(rect1); 
+    drawRect(rect2); 
+    drawRect(rect3); 
 }
 
 
@@ -25,5 +28,17 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    background('green') 
 
+}
+
+//draw the rectangle using rect variables
+function drawRect(r) {
+    push(); 
+    translate(r.x, r.y); 
+    rotate(angle); 
+    fill(255); 
+    noStroke(); 
+    rect(0,0,60,30); 
+    pop(); 
 }
