@@ -12,15 +12,13 @@ let rect1 = { x: 100, y:100};
 let rect2 = { x: 250, y:250};
 let rect3 = { x:400, y: 150};
 
+let angle = 0; 
+
 /**
  * The setup creates the canvas. 
 */
 function setup() {
     createCanvas(500,500); 
-    
-    drawRect(rect1); 
-    drawRect(rect2); 
-    drawRect(rect3); 
 }
 
 
@@ -30,7 +28,24 @@ function setup() {
 function draw() {
     background('green') 
 
+    avoidMouse(rect1); 
+    avoidMouse(rect2);
+    avoidMouse(rect3); 
+
+    drawRect(rect1); 
+    drawRect(rect2); 
+    drawRect(rect3); 
+
 }
+
+function avoidMouse(r) {
+    if (dist(mouseX, mouseY, r.x, r.y) < 80) 
+        r.x += (r.x - mouseX) *0.2;
+        r.y += (r.y = mouseY) * 0.2; 
+}
+
+
+
 
 //draw the rectangle using rect variables
 function drawRect(r) {
