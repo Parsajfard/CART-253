@@ -115,3 +115,13 @@ function moveEyes() {
     eyeball.left.x = constrain(eyeball.left.x, 275, 295); 
 
 }
+
+function drawYetiMouth() {
+    
+    //draw the mouth 
+    push(); 
+    fill(90,20,20); 
+    noStroke(); 
+    ellipse(mouth.x, mouth.y, mouth.width, mouth.height); 
+    pop(); 
+}
