@@ -23,8 +23,8 @@ let carName = "Click to generate a car name.";
  * Load the car and dinosaur data
  */
 async function preload() {
-    carData = await loadJSON('assets/data/cars.json');
-    dinosaurData = await loadJSON('assets/data/dinosaurs.json');
+    carData = await loadJSON('assets/Data/cars.json');
+    dinosaurData = await loadJSON('assets/Data/dinosaurs.json');
 }
 
 /**
