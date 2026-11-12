@@ -2,8 +2,7 @@
  * Conditionals Prototype #3
  * Parsa Fard
  * 
- * This is an abstract drawing of a series of rectangles that rotate 
- * and avoid the user's mouse. 
+ * This is an abstract drawing of shapes that fall depending on mouse's position. 
  */
 
 "use strict";
