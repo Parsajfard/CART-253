@@ -11,3 +11,9 @@ For prototype two, I used the mouse variables to control fill functions. I also 
 For prototype three, I created a rocket that launches at an angle using the angleMode and rotation function. I also learned how to have multiple functions that are tethered to the variables of a single object. I also experimented with creating speed and acceleration variables to modulate the movement of the rocket. 
 
 For my future prototypes I want to learn more about how to use sin and cos functions to make my movements more dynamic.
+
+## Conditionals
+
+The conditionals prototyping assignment helped me understand how the user's actions can be used to affect the code . Something I really struggled with during this assignment and the last one was understanding how to turn an idea into logical coding steps. I figured out that making a drawing and then drawing out a system of what your code might look like in terms of variables and functions really helps in demystifying the process. 
+
+For my first prototype, I experimented with simple if statements, as well as using a true or false variable to have my if statement trigger a continuous event(the laser continuously moving). I also played around with having pop up text and changing colours. My second prototype went more in depth into how 
