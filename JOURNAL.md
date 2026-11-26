@@ -16,4 +16,12 @@ For my future prototypes I want to learn more about how to use sin and cos funct
 
 The conditionals prototyping assignment helped me understand how the user's actions can be used to affect the code . Something I really struggled with during this assignment and the last one was understanding how to turn an idea into logical coding steps. I figured out that making a drawing and then drawing out a system of what your code might look like in terms of variables and functions really helps in demystifying the process. 
 
-For my first prototype, I experimented with simple if statements, as well as using a true or false variable to have my if statement trigger a continuous event(the laser continuously moving). I also played around with having pop up text and changing colours. My second prototype went more in depth into how 
+For my first prototype, I experimented with simple if statements, as well as using a true or false variable to have my if statement trigger a continuous event(the laser continuously moving). I also played around with having pop up text and changing colours. My second prototype goes more in depth into using the mouseX and Y function within if statements. I also became more comfortable with constraints while writing the function that moves the eyes. 
+
+For my last prototype, I decided to go into a more experimental abstract direction, experimenting with dynamic motion and background gradients. I finally got to use the map and lerpColor functions! 
+
+Overall, I can feel myself becoming more comfortable with breaking down an idea into organized code and certain syntax is becoming muscle memory. 
+
+
+
+
