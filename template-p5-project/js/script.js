@@ -8,7 +8,7 @@
 "use strict";
 
 let video;
-let playing = false;
+let video2; 
 
 /**
  * Setup creates canvas
@@ -16,14 +16,16 @@ let playing = false;
 function setup() {
     createCanvas(640, 360);
     video = createVideo(['/assets/images/IMG_3576.mp4'])
+    video.size(width,height); 
 
+    video.showControls();
 }
 /**
  * 
 */
 function draw() {
-    background(0);
     image(video, 0, 0);
+    
 
 
 
