@@ -7,28 +7,24 @@
 
 "use strict";
 
-let img; 
+let video;
+let playing = false;
 
 /**
  * Setup creates canvas
 */
-async function setup() {
-    img = await loadImage('assets/images/clown.png');
-    createCanvas(1920,1080); 
-    background(51)
-    createCapture(VIDEO); 
+function setup() {
+    createCanvas(640, 360);
+    video = createVideo(['/assets/images/IMG_3576.mp4'])
+
 }
 /**
  * 
 */
 function draw() {
-    background(0); 
-    image(img,900,400); 
+    background(0);
+    image(video, 0, 0);
 
-    let c = get(900,400,1000,1000); 
 
-    square(c, 400, 400); 
-
-   
 
 }
